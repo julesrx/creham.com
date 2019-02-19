@@ -14,7 +14,10 @@
 	{/foreach}
 
 <br><br><br><br>
-<a href="https://www.gironde-habitat.fr/" target="_blank" style="text-decoration: underline;">Enquête Locataires Résidence de L'Europe</a>
+<a href="https://www.modalisa-enquete.com/grand_cognac_c/" target="_blank">
+Grand Cognac : Consultation des salariés<br>
+    <small style="text-transform:initial;">"Equilibre des temps de vie des salariés et parentalité en entreprise"</small>
+</a>
 
 </nav>
 <footer class="">
