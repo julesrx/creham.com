@@ -7,8 +7,28 @@
 
 body {
   font-family: "Cabin", sans-serif;
-}
+  color: $grey;
+  background: $white;
 
-h1 {
-  font-family: "Calibri", sans-serif;
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    border-bottom: 1px solid $grey;
+    margin: 10px 0;
+  }
+
+  main {
+    max-width: 950px;
+    margin: 10px auto;
+    padding: 0 10px;
+  }
 }
