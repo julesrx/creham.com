@@ -1,8 +1,8 @@
 title: Creham
 email: contact@creham.com
 description: >- # this means to ignore newlines until "short_description:"
-  Urbanisme, paysage, sociologie et développement local.
-short_description: Une équipe pluridisciplinaire.
+  Une équipe pluridisciplinaire pour vos projets d'étude, conseil, assistance à maîtrise d'ouvrage et maîtrise d'oeuvre.
+short_description: Creham, urbanisme, paysage, sociologie et développement local
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.creham.com" # the base hostname & protocol for your site, e.g. http://example.com
 color: eb5e03
