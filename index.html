@@ -1,8 +1,47 @@
 ---
 layout: home
+featured: Lien mis en avant
 ---
 <!-- Configure Jekyl Assets -->
-<img src="{{ '/assets/img/creham.gif' }}" alt="Creham">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, soluta autem! Similique modi aut dolore sint odit corrupti deleniti alias, quis harum delectus voluptate inventore autem commodi unde libero fuga?</p>
 
-<a href="/about">About</a>
+<header class="home">
+  <img class="logo" src="{{ '/assets/img/creham.gif' }}" alt="Creham">
+  <span>une équipe pluridisciplinaire</span>
+
+  <hr>
+  <p>Urbanisme, paysage, sociologie et développement local</p>
+  <hr>
+
+  <img  src="{{ '/assets/img/home.jpg' }}" alt="Accueil" id="header-img">
+
+  <hr>
+  <p>Etude,conseil,assistance à maîtrise d'ouvrage et maîtrise d'oeuvre</p>
+  <hr>
+</header>
+
+<nav>
+  <ul>
+    <li>Notre équipe</li>
+    <li>Nos métiers</li>
+    <li>Nos interventions</li>
+  </ul>
+
+  <a href="#">{{ page.featured }}</a>
+</nav>
+
+<footer>
+  <a href="#" title="contactez-nous">
+    <img src="{{'/assets/img/icons/contact.png'}}" alt="Contact" class="icon">
+    Contact
+  </a>
+  <a href="#" title="Accès">
+    <img src="{{'/assets/img/icons/acces.png'}}" alt="Accès" class="icon">
+    Accès
+  </a>
+  <a href="#" title="Espace de travail">
+    <img src="{{'/assets/img/icons/espace.png'}}" alt="Espace" class="icon">
+    Espace de travail
+  </a>
+
+  <a href="#" title="Mentions légales" id="mentions">Mentions légales</a>
+</footer>

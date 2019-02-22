@@ -26,9 +26,31 @@ body {
     margin: 10px 0;
   }
 
-  main {
-    max-width: 950px;
+  #container {
+    max-width: 940px;
     margin: 10px auto;
     padding: 0 10px;
+
+    header {
+      &.home {
+        #header-img {
+          width: 100%;
+        }
+      }
+    }
+
+    footer {
+      font-size: 10px;
+      text-transform: uppercase;
+
+      #mentions {
+        float: right;
+        clear: both;
+      }
+
+      img.icon {
+        margin-left: 10px;
+      }
+    }
   }
 }
