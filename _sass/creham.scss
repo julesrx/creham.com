@@ -27,15 +27,34 @@ body {
   }
 
   #container {
-    max-width: 940px;
+    max-width: $container;
     margin: 10px auto;
     padding: 0 10px;
 
     header {
-      &.home {
-        #header-img {
-          width: 100%;
+      font-family: "Calibri", sans-serif;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .logo {
+          margin-bottom: 5px;
+          width: calc(#{$container}/ 2);
         }
+
+        .slogan {
+          font-size: 2.4em;
+          margin-top: 5px;
+        }
+      }
+
+      .sub-title {
+        font-size: 32px;
+        font-weight: 400;
+        color: $primary;
+        margin: 0;
       }
     }
 
