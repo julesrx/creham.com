@@ -50,11 +50,36 @@ body {
         }
       }
 
+      img.deco {
+        width: 100%;
+      }
+
       .sub-title {
         font-size: 32px;
         font-weight: 400;
         color: $primary;
         margin: 0;
+
+        &.sub-2 {
+          color: $grey;
+        }
+      }
+    }
+
+    nav {
+      &.home {
+        background: url("/assets/img/nav.jpg") no-repeat;
+        background-size: contain;
+        color: $white;
+        height: 180px;
+        width: 100%;
+        padding: 15px 10px;
+
+        img.virgule {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
       }
     }
 
