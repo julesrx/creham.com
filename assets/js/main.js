@@ -7,7 +7,7 @@ Vue.prototype.$http = axios;
 
 const app = new Vue({
   el: '#container',
-  delimiters: ['v{', '}'],
+  delimiters: ['[[', ']]'],
   data() {
     return {
       title: 'Creham'
