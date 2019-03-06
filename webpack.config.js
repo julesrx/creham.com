@@ -24,6 +24,10 @@ var config = {
         use: [
           'vue-style-loader',
           'css-loader'
+        ],
+        exclude: [
+          path.resolve(__dirname, './assets/css'),
+          path.resolve(__dirname, './_sass'),
         ]
       }
     ]
@@ -32,7 +36,11 @@ var config = {
     alias: {
       vue$: 'vue/dist/vue.esm.js'
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: [
+      '.js',
+      '.vue',
+      '.json'
+    ]
   }
 }
 
