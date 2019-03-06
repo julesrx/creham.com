@@ -1,0 +1,38 @@
+{
+  "name": "creham",
+  "version": "1.0.0",
+  "description": "Urbanisme, paysage, sociologie et développement local.",
+  "homepage": "http://www.creham.com/",
+  "author": {
+    "name": "JulesRx",
+    "email": "julesraffoux@utila.io",
+    "url": "https://julesrx.fr/"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulesRx/Creham.git"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "serve": "concurrently --kill-others \"npm run watch\" \"sh ./scripts/serve.sh\"",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && sh ./scripts/build.sh"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.6.8"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.8",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
