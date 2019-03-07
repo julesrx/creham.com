@@ -8,6 +8,8 @@ url: "http://www.creham.com" # the base hostname & protocol for your site, e.g. 
 color: eb5e03
 lang: fr
 
+featured: "GRAND COGNAC : CONSULTATION DES SALARIÉS \n \"Equilibre des temps de vie des salariés et parentalité en entreprise\""
+
 # Build settings
 markdown: kramdown
 

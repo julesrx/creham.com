@@ -1,6 +1,5 @@
 ---
 layout: home
-featured: Lien mis en avant
 ---
 <!-- Configure Jekyl Assets -->
 
@@ -24,15 +23,23 @@ featured: Lien mis en avant
 </header>
 
 <nav class="home">
-  <img src="{{ '/assets/img/virgule.png' }}" alt="Virgule" class="virgule">
+  <div class="nav-container">
 
-  <ul>
-    <li>Notre équipe</li>
-    <li>Nos métiers</li>
-    <li>Nos interventions</li>
-  </ul>
+    <!-- <img src="{{ '/assets/img/virgule.png' }}" alt="Virgule" class="virgule"> -->
 
-  <a href="#">{{ page.featured }}</a>
+    <ul>
+      <li>Notre équipe</li>
+      <li>Nos métiers</li>
+      <li>Nos interventions</li>
+    </ul>
+
+    <!-- <a href="#" class="featured">{{ site.featured }}</a> -->
+    <a href="#" class="featured">
+      <span class="fw-700">GRAND COGNAC : CONSULTATION DES SALARIÉS</span>
+      <br>
+      "Equilibre des temps de vie des salariés et parentalité en entreprise"
+    </a>
+  </div>
 </nav>
 
 <footer>
