@@ -29,3 +29,13 @@ collections:
   pages:
     output: true
     permalink: /:path
+
+exclude: [
+  "package.json",
+  "package-lock.json",
+  "webpack.config.js",
+  "README.md",
+  "Gemfile",
+  "Gemfile.lock",
+  "/node_modules"
+]
