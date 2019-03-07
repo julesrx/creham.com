@@ -6,7 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,700");
 
-// A déplacer sur Webpack
+// A déplacer sur Webpack ?
 
 body {
   font-family: "Cabin", sans-serif;
@@ -72,17 +72,18 @@ body {
     }
 
     nav {
+      display: block;
+
       &.home {
         background: url("/assets/img/nav.jpg") no-repeat;
         background-size: contain;
         color: $white;
         height: 180px;
         width: 100%;
-        // font-size: 1.15em;
         font-size: 18px;
-        // font-weight: 700;
 
         .nav-container {
+          position: relative;
           padding: 14px;
 
           ul {
@@ -107,6 +108,7 @@ body {
             position: absolute;
             top: 0;
             right: 0;
+            transform: rotate(0.5deg);
           }
         }
       }
@@ -114,15 +116,19 @@ body {
 
     footer {
       font-size: 10px;
+      margin: 8px 0;
       text-transform: uppercase;
 
-      #mentions {
-        float: right;
-        clear: both;
+      a {
+        margin-right: 10px;
+
+        img.icon {
+          margin: 0 2px;
+        }
       }
 
-      img.icon {
-        margin-left: 10px;
+      .mentions {
+        margin-left: 400px;
       }
     }
   }
