@@ -1,5 +1,7 @@
-const path = require('path')
-const webpack = require('webpack')
+const path = require('path');
+const webpack = require('webpack');
+
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 var config = {
   entry: './assets/js/main.js',
@@ -15,7 +17,11 @@ var config = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            scss: ['vue-style-loader', 'css-loader', 'sass-loader']
+            scss: [
+              'vue-style-loader',
+              'css-loader',
+              'sass-loader'
+            ]
           }
         }
       },
@@ -41,7 +47,10 @@ var config = {
       '.vue',
       '.json'
     ]
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin()
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {

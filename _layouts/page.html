@@ -2,6 +2,28 @@
 layout: default
 ---
 
+<header class="page">
+  <img src="{{ '/assets/img/creham.gif' }}" alt="Creham" class="logo">
+  <hr>
+  <p class="slider-text">
+    <span data-slider-id="1">urbanist<span class="e">e</span></span>
+    <span>archit<span>e</span>cte</span>
+    <span>paysagist<span>e</span></span>
+    <span>psychosociologu<span>e</span></span>
+    <span>socio<span>é</span>conomiste</span>
+    <span>g<span>é</span>ographe</span>
+  </p>
+  <hr>
+
+  <div class="slider-container">
+    <slider :sliders="sliders"></slider>
+  </div>
+</header>
+
+<nav>
+
+</nav>
+
 <article>
   <div class="info">
     {{ content }}

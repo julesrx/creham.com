@@ -37,36 +37,59 @@ body {
     header {
       font-family: "Calibri", sans-serif;
 
-      .title {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
+      &.page {
         .logo {
-          margin-bottom: 5px;
-          width: calc(#{$container}/ 2);
+          width: 380px;
         }
 
-        .slogan {
-          font-size: 2.4em;
-          margin-top: 5px;
+        .slider-text {
+          font-size: 1.8em;
+          margin: 0 auto;
+          font-weight: normal;
+        }
+
+        .slider {
+          img {
+            margin: 0;
+            width: 100%;
+            display: block;
+          }
         }
       }
 
-      img.deco {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
+      &.home {
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
 
-      .sub-title {
-        font-size: 32px;
-        font-weight: 400;
-        color: $primary;
-        margin: 0;
+          .logo {
+            margin-bottom: 5px;
+            width: calc(#{$container}/ 2);
+          }
 
-        &.sub-2 {
-          color: $grey;
+          .slogan {
+            font-size: 2.4em;
+            margin-top: 5px;
+          }
+        }
+
+        img.deco {
+          width: 100%;
+          display: block;
+          margin: 0;
+          padding: 0;
+        }
+
+        .sub-title {
+          font-size: 32px;
+          font-weight: 400;
+          color: $primary;
+          margin: 0;
+
+          &.sub-2 {
+            color: $grey;
+          }
         }
       }
     }
