@@ -1,5 +1,5 @@
-const path = require('path');
 const webpack = require('webpack');
+const path = require('path');
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
@@ -14,16 +14,7 @@ var config = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            scss: [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader'
-            ]
-          }
-        }
+        loader: 'vue-loader'
       },
       {
         test: /\.css$/,
@@ -33,7 +24,19 @@ var config = {
         ],
         exclude: [
           path.resolve(__dirname, './assets/css'),
-          path.resolve(__dirname, './_sass'),
+          path.resolve(__dirname, './_sass')
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ],
+        exclude: [
+          path.resolve(__dirname, './assets/css'),
+          path.resolve(__dirname, './_sass')
         ]
       }
     ]
@@ -44,8 +47,7 @@ var config = {
     },
     extensions: [
       '.js',
-      '.vue',
-      '.json'
+      '.vue'
     ]
   },
   plugins: [
