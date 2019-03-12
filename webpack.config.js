@@ -6,10 +6,9 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 var config = {
   entry: './assets/js/main.js',
   output: {
-    path: path.resolve(__dirname, './assets/js'),
+    path: path.resolve(__dirname, 'assets/js'),
     filename: 'build.js'
   },
-  mode: 'development',
   module: {
     rules: [
       {
@@ -17,14 +16,15 @@ var config = {
         loader: 'vue-loader'
       },
       {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
         test: /\.css$/,
         use: [
           'vue-style-loader',
           'css-loader'
-        ],
-        exclude: [
-          path.resolve(__dirname, './assets/css'),
-          path.resolve(__dirname, './_sass')
         ]
       },
       {
@@ -33,30 +33,29 @@ var config = {
           'vue-style-loader',
           'css-loader',
           'sass-loader'
-        ],
-        exclude: [
-          path.resolve(__dirname, './assets/css'),
-          path.resolve(__dirname, './_sass')
         ]
       }
     ]
   },
   resolve: {
-    alias: {
-      vue$: 'vue/dist/vue.esm.js'
-    },
     extensions: [
       '.js',
       '.vue'
-    ]
+    ],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
   },
   plugins: [
     new VueLoaderPlugin()
   ]
 }
 
-if (process.env.NODE_ENV === 'production') {
-  config.mode = 'production'
-}
+module.exports = (env, argv) => {
 
-module.exports = config;
+  if (argv.mode === 'production') {
+    //...
+  }
+
+  return config;
+};

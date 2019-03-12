@@ -15,19 +15,22 @@
     "url": "git+https://github.com/JulesRx/Creham.git"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack",
-    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "dev": "webpack -d --mode development",
+    "watch": "webpack -d --mode development --watch",
     "serve": "concurrently --kill-others \"npm run watch\" \"sh ./scripts/serve.sh\"",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && sh ./scripts/build.sh"
+    "build": "webpack -p --mode production --progress --hide-modules && sh ./scripts/build.sh"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.6.8"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
-    "css-loader": "^2.1.0",
+    "css-loader": "^2.1.1",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-loader": "^15.7.0",
