@@ -4,7 +4,7 @@ const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 var config = {
-  entry: './assets/js/main.js',
+  entry: './assets/js/src/main.js',
   output: {
     path: path.resolve(__dirname, 'assets/js'),
     filename: 'build.js'
