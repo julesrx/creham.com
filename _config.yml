@@ -35,5 +35,6 @@ exclude: [
   "README.md",
   "Gemfile",
   "Gemfile.lock",
-  "/node_modules"
+  "/node_modules",
+  "/assets/js/src"
 ]
