@@ -1,0 +1,36 @@
+@import "../variables";
+
+$height: 131px;
+
+#slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: $height;
+
+  .mask {
+    overflow: hidden;
+    width: $container * 3;
+    height: $height;
+
+    img.slider-img {
+      float: left;
+      display: block;
+      width: $container;
+      height: $height;
+
+      &.moving {
+        animation: move 0.5s ease-in-out forwards;
+      }
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-$container);
+  }
+}

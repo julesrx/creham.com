@@ -8,6 +8,12 @@
   <main id="container">
     {{ content }}
   </main>
+  
+  <script src="{{- '/assets/js/main.js' -}}"></script>
+  {% if layout.js %}
+    {% capture js %}/assets/js/{{ layout.js }}.js{% endcapture %}
+    <script src="{{- js -}}"></script>
+  {% endif %}
 
 </body>
 </html>

@@ -38,6 +38,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+defaults:
+  - scope:
+      path: "assets/img/slider"
+    values:
+      slider: true
+
 collections:
   pages:
     output: true

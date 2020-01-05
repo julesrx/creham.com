@@ -1,5 +1,6 @@
 ---
 layout: default
+js: pages
 ---
 
 <header class="page">
@@ -15,8 +16,13 @@ layout: default
     <span>g<span>é</span>ographe</span>
   </p>
 
-  <div class="slider-img">
-    <img src="{{ '/assets/img/slider/1-urbaniste.jpg' }}" alt="1-urbaniste">
+  <div id="slider">
+    <div class="mask">
+      {% assign sliders = site.static_files | where: "slider", true %}
+      {% for slider in sliders %}
+        <img src="{{ slider.path }}" alt="{{ file.basename }}" class="slider-img">
+      {% endfor %}
+    </div>
   </div>
 </header>
 
