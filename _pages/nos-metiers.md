@@ -2,6 +2,8 @@
 layout: page
 title: Nos métiers
 permalink: /nos-metiers
+redirect_from:
+  - /nos-metiers-p-2
 navigation: true
 order: 2
 ---

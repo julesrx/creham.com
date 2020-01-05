@@ -2,6 +2,8 @@
 layout: page
 title: Notre équipe
 permalink: /notre-equipe
+redirect_from:
+  - /notre-equipe-p-1
 navigation: true
 order: 1
 ---
