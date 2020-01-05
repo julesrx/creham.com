@@ -1,0 +1,43 @@
+---
+layout: home
+---
+
+<header class="home">
+  <div class="title">
+    <a href="/" title="Accueil">
+      <img class="logo" src="{{ '/assets/img/creham.gif' }}" alt="Creham">
+    </a>
+    <span class="slogan">une équipe pluridisciplinaire</span>
+  </div>
+
+  <p class="sub-title">Urbanisme, paysage, sociologie et développement local</p>
+  <img src="{{ '/assets/img/home.jpg' }}" alt="Accueil" class="deco">
+  <p class="sub-title text-grey ">Etude, conseil, assistance à maîtrise d'ouvrage et maîtrise d'oeuvre</p>
+</header>
+
+<nav class="home">
+  <div class="home-container">
+    <img src="{{ '/assets/img/virgule.png' }}" alt="Virgule" class="virgule">
+
+    <ul>
+      {% assign ps = site.pages | sort: 'order' %}
+      {% for p in ps %}
+        {% if p.navigation %}
+          <li><a href="{{ p.permalink }}" title="{{ p.title }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <a href="#" target="_blank" class="featured">
+      <span class="fw-700">GRAND COGNAC : CONSULTATION DES SALARIÉS</span>
+      <br>
+      "Equilibre des temps de vie des salariés et parentalité en entreprise"
+    </a>
+  </div>
+</nav>
+
+<footer>
+  {% include link-nav.html %}
+
+  <a href="#" title="Mentions légales" class="mentions">Mentions légales</a>
+</footer>

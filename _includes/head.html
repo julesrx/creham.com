@@ -1,0 +1,45 @@
+<head>
+  <base href="/">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <meta name="title" content="{{- site.title -}}">
+  <meta name="description" content="{{- site.description -}}">
+  <meta name="theme-color" content="#{{- site.color -}}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{- site.twitter_username -}}" />
+  <meta name="twitter:title" content="{{- site.title -}}" />
+  <meta name="twitter:description" content="{{- site.description -}}" />
+  <meta name="twitter:image" content="{{- '/assets/img/thumbnail.png' | absolute_url -}}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="{{- site.title -}}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{- '/assets/img/thumbnail.png' | absolute_url -}}">
+  <meta property="og:url" content="{{- page.url | absolute_url -}}">
+  <meta property="og:description" content="{{- site.description -}}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:email" content="{{- site.email -}}">
+
+  <link rel="canonical" href="{{- site.url -}}">
+  <link rel="icon" type="image/png" href="{{- '/assets/img/favicon.png' -}}" />
+  <link rel="shortcut icon" type="image/png" href="{{- '/assets/img/favicon.png' | relative_url -}}">
+  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="{{- '/assets/img/favicon.ico' -}}" /><![endif]-->
+
+  <link rel="stylesheet" href="{{- '/assets/css/style.css' -}}">
+
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+
+  {% if page.title && page.title != '' %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+  {% else %}
+    <title>{{ site.short_description }}</title>
+  {% endif %}
+</head>
