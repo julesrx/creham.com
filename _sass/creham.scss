@@ -32,6 +32,24 @@ body {
   img.icon {
     max-width: 10px;
   }
+
+  .link-nav {
+    font-family: $font-cabin;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+    a {
+      margin-right: 10px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      img.icon {
+        margin: 0 2px;
+      }
+    }
+  }
 }
 
 main#container {
@@ -210,29 +228,11 @@ main#container {
     font-size: 1em;
     margin: 8px 0;
     text-transform: uppercase;
+    @include clearfix;
 
-    // clearfix ?
     .mentions {
       float: right;
       margin-right: 200px;
-    }
-  }
-}
-
-.link-nav {
-  font-family: $font-cabin;
-  font-size: 0.9em;
-  text-transform: uppercase;
-
-  a {
-    margin-right: 10px;
-
-    &:last-child {
-      margin: 0;
-    }
-
-    img.icon {
-      margin: 0 2px;
     }
   }
 }
