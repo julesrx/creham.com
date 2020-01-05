@@ -1,0 +1,2 @@
+favicon ico
+corriger les urls et remettre les / au début des urls (voir ce qui a été fait au commit du 05/12/2020)

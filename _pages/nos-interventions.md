@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nos interventions
-permalink: /nos-interventions
+permalink: nos-interventions
 redirect_from:
   - /nos-interventions-p-3
 navigation: true
