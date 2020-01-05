@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "normalize";
+@import "mixins";
 @import "variables";
 @import "utils";
 
@@ -20,13 +21,17 @@ body {
       color: $primary;
     }
   }
-}
 
-hr {
-  border: none;
-  height: 1px;
-  border-bottom: 1px solid $grey;
-  margin: 10px 0;
+  hr {
+    border: none;
+    height: 1px;
+    border-bottom: 1px solid $grey;
+    margin: 10px 0;
+  }
+
+  img.icon {
+    max-width: 10px;
+  }
 }
 
 main#container {
@@ -154,6 +159,49 @@ main#container {
         a {
           margin-right: 25px;
         }
+      }
+    }
+  }
+
+  article.content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 35px 25px;
+    margin: 10px 0;
+    background: #f6f6f6;
+
+    .info {
+      width: 72%;
+      padding: 0 3% 0 0;
+      font-size: 1.6em;
+
+      p {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    .print {
+      width: 28%;
+      text-transform: uppercase;
+
+      a {
+        margin-left: 5px;
+
+        span {
+          font-size: 1.2em;
+        }
+
+        img.icon {
+          display: inline-block;
+          margin: 0 5px -4px 0;
+          max-width: 18px;
+        }
+      }
+
+      img.virgule {
+        width: 50%;
+        float: right;
       }
     }
   }

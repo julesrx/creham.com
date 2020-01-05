@@ -30,12 +30,21 @@ layout: default
   {% include link-nav.html %}
 </nav>
 
-<article>
+<article class="content">
   <div class="info">
     {{ content }}
   </div>
 
   <div class="print">
-    <p>Imprimer</p>
+    <a href="#">
+      <img src="{{ '/assets/img/icons/print.png' }}" alt="Imprimer" class="icon">
+      <span>Imprimer la page</span>
+    </a>
+    <hr>
+    <img src="{{ '/assets/img/virgule.png' }}" alt="Virgule" class="virgule">
   </div>
 </article>
+
+<footer>
+  <a href="#" title="Mentions légales" class="mentions mr-0">Mentions légales</a>
+</footer>
