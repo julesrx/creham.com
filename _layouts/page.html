@@ -6,8 +6,7 @@ layout: default
   <a href="/">
     <img src="{{ '/assets/img/creham.gif' }}" alt="Creham" class="logo" />
   </a>
-  <hr />
-  <p class="slider-text">
+  <p class="sub-title slider-text">
     <span data-slider-id="1">urbanist<span class="e">e</span></span>
     <span>archit<span>e</span>cte</span>
     <span>paysagist<span>e</span></span>
@@ -15,14 +14,21 @@ layout: default
     <span>socio<span>é</span>conomiste</span>
     <span>g<span>é</span>ographe</span>
   </p>
-  <hr />
 
-  <div class="slider-container">
-    <slider :sliders="sliders"></slider>
+  <div class="slider-img">
+    <img src="{{ '/assets/img/slider/1-urbaniste.jpg' }}" alt="1-urbaniste">
   </div>
 </header>
 
-<nav></nav>
+<nav class="page">
+  <div class="links">
+    <a href="#">Notre équipe</a>
+    <a href="#">Nos métiers</a>
+    <a href="#">Nos interventions</a>
+  </div>
+
+  {% include link-nav.html %}
+</nav>
 
 <article>
   <div class="info">
