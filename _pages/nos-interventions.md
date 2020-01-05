@@ -2,6 +2,8 @@
 layout: page
 title: Nos interventions
 permalink: /nos-interventions
+navigation: true
+order: 3
 ---
 
 Spécialisé en urbanisme, paysage, sociologie et développement local, le Créham intervient dans différents domaines :

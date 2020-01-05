@@ -2,9 +2,11 @@
 layout: page
 title: Notre équipe
 permalink: /notre-equipe
+navigation: true
+order: 1
 ---
 
-<p class="text-primary fw-700">L'équipe pluridisciplinaire du Créham est composée de :</p>
+__L'équipe pluridisciplinaire du Créham est composée de :__
 
 Serge BARRY, _diplômé architecte et urbaniste, directeur d'études associé (gérant)_
 

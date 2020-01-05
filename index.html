@@ -20,9 +20,12 @@ layout: home
     <img src="{{ '/assets/img/virgule.png' }}" alt="Virgule" class="virgule">
 
     <ul>
-      <li><a href="notre-equipe" title="Notre équipe">Notre équipe</a></li>
-      <li><a href="nos-metiers" title="Nos métiers">Nos métiers</a></li>
-      <li><a href="nos-interventions" title="Nos interventions">Nos interventions</a></li>
+      {% assign ps = site.pages | sort: 'order' %}
+      {% for p in ps %}
+        {% if p.navigation %}
+          <li><a href="{{ p.permalink }}" title="{{ p.title }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
 
     <a href="#" target="_blank" class="featured">

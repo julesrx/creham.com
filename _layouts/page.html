@@ -22,9 +22,12 @@ layout: default
 
 <nav class="page">
   <div class="links">
-    <a href="notre-equipe">Notre équipe</a>
-    <a href="nos-metiers">Nos métiers</a>
-    <a href="nos-interventions">Nos interventions</a>
+    {% assign ps = site.pages | sort: 'order' %}
+    {% for p in ps %}
+      {% if p.navigation %}
+        <a href="{{ p.permalink }}" {% if page.url == p.permalink %} class="couleur" {% endif %}>{{ p.title }}</a>
+      {% endif %}
+    {% endfor %}
   </div>
 
   {% include link-nav.html %}
