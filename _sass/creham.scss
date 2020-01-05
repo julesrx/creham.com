@@ -107,6 +107,14 @@ main#container {
       .slider-text {
         font-size: 2.9em;
         color: $grey;
+
+        span.e {
+          color: $primary;
+        }
+
+        .couleur span.e {
+          color: $grey;
+        }
       }
 
       @import "components/slider";
