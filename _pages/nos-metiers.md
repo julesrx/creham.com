@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nos métiers
-permalink: nos-metiers
+permalink: /nos-metiers
 redirect_from:
   - /nos-metiers-p-2
 navigation: true

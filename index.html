@@ -4,26 +4,26 @@ layout: default
 
 <header class="home">
   <div class="title">
-    <a href="{{ site.baseurl }}/" title="Accueil">
-      <img class="logo" src="{{ 'assets/img/creham.gif' }}" alt="Creham">
+    <a href="/" title="Accueil">
+      <img class="logo" src="{{ '/assets/img/creham.gif' }}" alt="Creham">
     </a>
     <span class="slogan">une équipe pluridisciplinaire</span>
   </div>
 
   <p class="sub-title">Urbanisme, paysage, sociologie et développement local</p>
-  <img src="{{ 'assets/img/home.jpg' }}" alt="Accueil" class="deco">
+  <img src="{{- '/assets/img/home.jpg' -}}" alt="Accueil" class="deco">
   <p class="sub-title text-grey ">Etude, conseil, assistance à maîtrise d'ouvrage et maîtrise d'oeuvre</p>
 </header>
 
 <nav class="home">
   <div class="home-container">
-    <img src="{{ 'assets/img/virgule.png' }}" alt="Virgule" class="virgule">
+    <img src="{{- '/assets/img/virgule.png' -}}" alt="Virgule" class="virgule">
 
     <ul>
       {% assign ps = site.pages | sort: 'order' %}
       {% for p in ps %}
         {% if p.navigation %}
-          <li><a href="{{ p.permalink }}" title="{{ p.title }}">{{ p.title }}</a></li>
+          <li><a href="{{- p.permalink -}}" title="{{- p.title -}}">{{ p.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>

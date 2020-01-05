@@ -4,8 +4,8 @@ js: pages
 ---
 
 <header class="page">
-  <a href="{{ site.baseurl }}/">
-    <img src="{{ 'assets/img/creham.gif' }}" alt="Creham" class="logo" />
+  <a href="/">
+    <img src="{{- '/assets/img/creham.gif' -}}" alt="Creham" class="logo" />
   </a>
   <p class="sub-title slider-text">
     <span>urbanist<span class="e">e</span></span>
@@ -20,7 +20,7 @@ js: pages
     <div class="mask">
       {% assign sliders = site.static_files | where: "slider", true %}
       {% for slider in sliders %}
-        <img src="assets/img/slider/{{ slider.name }}" alt="{{ file.basename }}" class="slider-img">
+        <img src="{{- slider.path -}}" alt="{{- file.basename -}}" class="slider-img">
       {% endfor %}
     </div>
   </div>
@@ -31,7 +31,7 @@ js: pages
     {% assign ps = site.pages | sort: 'order' %}
     {% for p in ps %}
       {% if p.navigation %}
-        <a href="{{ p.permalink }}" {% if page.url == p.permalink %} class="couleur" {% endif %}>{{ p.title }}</a>
+        <a href="{{- p.permalink -}}" {% if page.url == p.permalink %} class="couleur" {% endif %}>{{ p.title }}</a>
       {% endif %}
     {% endfor %}
   </div>
@@ -46,11 +46,11 @@ js: pages
 
   <div class="print">
     <a href="#">
-      <img src="{{ 'assets/img/icons/print.png' }}" alt="Imprimer" class="icon">
+      <img src="{{- '/assets/img/icons/print.png' -}}" alt="Imprimer" class="icon">
       <span>Imprimer la page</span>
     </a>
     <hr>
-    <img src="{{ 'assets/img/virgule.png' }}" alt="Virgule" class="virgule">
+    <img src="{{- '/assets/img/virgule.png' -}}" alt="Virgule" class="virgule">
   </div>
 </article>
 
