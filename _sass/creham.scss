@@ -83,7 +83,8 @@ main#container {
 
         .slogan {
           font-size: 3.7em;
-          margin-top: 5px;
+          margin: 5px 0 0 0;
+          font-weight: normal;
         }
       }
 
@@ -232,14 +233,14 @@ main#container {
   }
 
   footer {
-    font-size: 1em;
     margin: 8px 0;
     text-transform: uppercase;
     @include clearfix;
 
     .mentions {
-      float: right;
+      font-size: 0.9em;
       margin-right: 200px;
+      float: right;
     }
   }
 }

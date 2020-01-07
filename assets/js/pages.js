@@ -18,7 +18,7 @@ setInterval(function () {
     current.classList.remove(moving);
     after.classList.remove(moving);
 
-    var pos = Number(after.attributes['src'].value.match(/(?<=\/)\d(?=-)/g)[0]);
+    var pos = Number(after.attributes['src'].value.match(/\d(?=-)/g)[0]);
     highlightText(pos - 1);
 
     imgs = getSliderImages();
