@@ -1,11 +1,10 @@
 @charset "utf-8";
 
 @import "normalize";
+@import "fonts";
 @import "mixins";
 @import "variables";
 @import "utils";
-
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,700");
 
 body {
   font-family: $font-cabin;
@@ -98,10 +97,6 @@ main#container {
         margin: 0;
         padding: 0;
       }
-
-      // .sub-title:nth-child(2) {
-      //   color: red;
-      // }
     }
 
     &.page {
