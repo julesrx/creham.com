@@ -205,29 +205,8 @@ main#container {
         color: $primary;
       }
 
-      &.page-mentions-legales {
-        p {
-          b {
-            display: inline-block;
-            margin-bottom: 4px;
-            margin-top: 10px;
-          }
-
-          &:first-child {
-            b {
-              margin-top: 0;
-            }
-          }
-        }
-
-        ul {
-          list-style: none;
-
-          li:before {
-            content: "- ";
-          }
-        }
-      }
+      @import "pages/mentions-legales";
+      @import "pages/nos-metiers";
     }
 
     .print {

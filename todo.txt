@@ -1,6 +1,3 @@
-espacer un peu plus les oranges dans métiers
-p ~ string margin 0px 0 16px 0
-
 espacer un peu plus interventions (les p en général +2px ?)
 
 enlever les liens en liquid inutiles
