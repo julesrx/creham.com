@@ -1,0 +1,10 @@
+&.page-nos-interventions {
+  p {
+    margin-top: 14px;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
