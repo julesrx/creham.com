@@ -14,6 +14,7 @@ Spécialisé en urbanisme, paysage, sociologie et développement local, le Créh
 __La stratégie et la planification territoriale :__ Schéma de Cohérence Territoriale (SCOT), Plan Local d’Urbanisme (PLU et PLUI), Carte communale.
 
 __L’urbanisme opérationnel__ (habitat, activités économiques, équipements, …) lotissement, Zone d’Aménagement Concerté, Projet Urbain Partenarial, ...
+
 __L’aménagement d’espaces publics__ (voiries, places, parcs, jardins, ...) : études, maîtrise d’œuvre urbaine et paysagère.
 
 __L’habitat :__ Programme Local de l’Habitat (PLH), études de marché, Maîtrise d’Oeuvre Urbaine et Sociale (MOUS), opérations de réhabilitation et construction / démolition.
