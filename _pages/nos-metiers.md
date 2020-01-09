@@ -6,6 +6,7 @@ redirect_from:
   - /nos-metiers-p-2
 navigation: true
 order: 2
+image: metiers.png
 ---
 
 Depuis 1985, le Créham mène aux côtés de collectivités publiques, d’organismes para-publics et d’opérateurs privés, des missions d’études, de conseil, d’assistance à maîtrise d’ouvrage et de maîtrise d’oeuvre.

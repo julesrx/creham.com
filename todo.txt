@@ -18,3 +18,5 @@ enlever phrase parenthese photo
 centrer titrtre acceuil entre hr ??
 
 espacer un peu plus interventions (les p en général +2px ?)
+
+enlever les liens en liquid inutiles

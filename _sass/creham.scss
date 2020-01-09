@@ -50,6 +50,10 @@ body {
       }
     }
   }
+
+  .clearfix {
+    @include clearfix;
+  }
 }
 
 main#container {
@@ -228,6 +232,11 @@ main#container {
       img.virgule {
         width: 50%;
         float: right;
+      }
+
+      img.page-image {
+        display: block;
+        margin: 10px auto 0;
       }
     }
 

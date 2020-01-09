@@ -50,7 +50,14 @@ js: pages
       <span>Imprimer la page</span>
     </a>
     <hr>
-    <img src="{{- '/assets/img/virgule.png' -}}" alt="Virgule" class="virgule">
+
+    <div class="clearfix">
+      <img src="{{- '/assets/img/virgule.png' -}}" alt="Virgule" class="virgule">
+    </div>
+
+    {% if page.image %}
+      <img src="/assets/img/pages/{{- page.image -}}" class="page-image">
+    {% endif %}
   </div>
 </article>
 
