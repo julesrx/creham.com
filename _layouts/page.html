@@ -29,9 +29,10 @@ js: pages
 <nav class="page">
   <div class="links">
     {% assign ps = site.pages | sort: 'order' %}
+    {% assign url = page.url | replace: '/', '' %}
     {% for p in ps %}
       {% if p.navigation %}
-        <a href="{{- p.permalink -}}" {% if page.url == p.permalink %} class="couleur" {% endif %}>{{ p.title }}</a>
+        <a href="{{- p.permalink -}}" {% if url == p.permalink %} class="couleur" {% endif %}>{{ p.title }}</a>
       {% endif %}
     {% endfor %}
   </div>

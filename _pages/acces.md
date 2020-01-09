@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Accès
-permalink: /acces
+permalink: acces
 redirect_from:
-  - /acces-p-4
+  - acces-p-4
 ---
 
 __Créham__  
