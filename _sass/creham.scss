@@ -215,11 +215,16 @@ main#container {
       width: 28%;
       text-transform: uppercase;
 
-      a {
+      span.print-button {
         margin-left: 5px;
 
         span {
           font-size: 1.2em;
+
+          &:hover {
+            cursor: pointer;
+            color: $primary;
+          }
         }
 
         img.icon {
