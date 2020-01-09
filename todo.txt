@@ -1,2 +1,20 @@
 favicon ico
 404 page
+print
+me,tions legales
+connexion lien vers rien
+
+moi moi moi mentions legales
+GitHub Pages dans hebergement
+
+image nos métiers
+espacer un peu plus les oranges
+p ~ string margin 0px 0 16px 0
+
+dl font
+
+enlever phrase parenthese photo
+
+centrer titrtre acceuil entre hr ??
+
+espacer un peu plus interventions (les p en général +2px ?)
