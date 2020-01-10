@@ -1,8 +1,8 @@
-title: Creham
+title: Créham
 email: contact@creham.com
 description: >- # this means to ignore newlines until the next property:
   Une équipe pluridisciplinaire pour vos projets d'étude, conseil, assistance à maîtrise d'ouvrage et maîtrise d'oeuvre.
-short_description: Creham, urbanisme, paysage, sociologie et développement local
+short_description: Créham, urbanisme, paysage, sociologie et développement local
 baseurl: "" # the subpath of your site, e.g. /blog (usefull if you have a github-pages subpath e.g. http://user.github.com/blog)
 #url: "https://creham.com" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://creham.julesrx.fr" # the base hostname & protocol for your site, e.g. http://example.com
