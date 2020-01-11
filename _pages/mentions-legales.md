@@ -7,9 +7,9 @@ redirect_from:
 ---
 
 <b>Editeur du site</b>  
-__Créham__  
-202 rue d'Ornano  
-33000 Bordeaux  
+__{{ site.title }}__  
+{{ site.street }}, {{ site.zip }} {{ site.city }}  
+{{ site.tel }}
 
 <b>Conception et graphisme</b>  
 O tempora  
@@ -29,21 +29,20 @@ Site : <a href="http://www.triptic.biz" target="_blank">www.triptic.biz</a>
 SIRET : 443 147 525 00028  
 APE : 5829C
 
-Jules RAFFOUX  
+Jules Raffoux  
 Site : <a href="https://julesrx.fr" target="_blank">julesrx.fr</a>
 
 <b>Hébergement du site</b>  
 <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
 
 <b>Crédits photographiques</b>  
-Créham et Frédéric LE LAN / Communauté d'Agglomération de La Rochelle
+{{ site.title }} et Frédéric Le Lan (C.A. de La Rochelle)
 
 <b>Données personnelles</b>  
-Les informations collectées sur le site sont destinées au Créham. Elles font l'objet d'un traitement informatique ayant pour finalité le traitement de votre demande et notre gestion commerciale, en particulier :  
+Les informations collectées sur le site sont destinées au {{ site.title }}. Elles font l'objet d'un traitement informatique ayant pour finalité le traitement de votre demande et notre gestion commerciale, en particulier :  
 - la réponse aux demandes d'information formulées sur le site,
 - l'envoi d'informations commerciales lorsque vous avez donné votre accord ou lorsque la législation en vigueur l'autorise,
 - l'établissement de statistiques générales sur la consultation du site afin d'améliorer les prestations que nous offrons.
  
-Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous disposez d'un droit d'accès, de rectification, de suppression des informations qui vous concernent, que vous pouvez exercer en vous adressant à :
-
-__Créham__ 202 Rue d'Ornano 33000 Bordeaux
+Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous disposez d'un droit d'accès, de rectification, de suppression des informations qui vous concernent, que vous pouvez exercer en vous adressant à :  
+{{ site.title }}, {{ site.street }}, {{ site.zip }} {{ site.city }} 
