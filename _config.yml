@@ -1,3 +1,8 @@
+#url: "https://creham.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://julesrx.fr"
+baseurl: "" # the subpath of your site, e.g. /blog
+lang: fr
+
 title: Créham
 email: contact@creham.com
 description: >- # this means to ignore newlines until the next property:
@@ -7,12 +12,7 @@ street: "202 rue d'Ornano"
 zip: 33000
 city: Bordeaux
 tel: "05 56 44 00 25"
-
-baseurl: "" # the subpath of your site, e.g. /blog (usefull if you have a github-pages subpath e.g. http://user.github.com/blog)
-#url: "https://creham.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://creham.julesrx.fr" # the base hostname & protocol for your site, e.g. http://example.com
 color: eb5e03
-lang: fr
 
 featured_link: "https://www.modalisa-enquete.com/grand_cognac_c/"
 featured_html: >-
@@ -20,7 +20,6 @@ featured_html: >-
   <br>
   "Equilibre des temps de vie des salariés et parentalité en entreprise"
 
-# Build settings
 markdown: kramdown
 
 sass:
