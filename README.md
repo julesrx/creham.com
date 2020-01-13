@@ -1,4 +1,4 @@
 # Créham
 Urbanisme, paysage, sociologie et développement local.
 
-Fait avec [Jekyll](https://jekyllrb.com/).
+Reprise du site du Créham avec [Jekyll](https://jekyllrb.com/).
