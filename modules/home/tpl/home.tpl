@@ -13,12 +13,6 @@
 		<a href="{MakeLienHTML lib=$cMenu->pg_titre id=$cMenu->pg_id type='p'}" title="">{$cMenu->pg_titre}</a>
 	{/foreach}
 
-<br><br><br><br>
-<a href="https://www.modalisa-enquete.com/grand_cognac_c/" target="_blank">
-Grand Cognac : Consultation des salariés<br>
-    <small style="text-transform:initial;">"Equilibre des temps de vie des salariés et parentalité en entreprise"</small>
-</a>
-
 </nav>
 <footer class="">
 	<a href="/contact" title="contactez-nous"><img src="./images/picto-contact.png" alt=""/> contact</a>
