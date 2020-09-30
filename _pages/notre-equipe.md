@@ -14,7 +14,7 @@ Serge BARRY, _diplômé architecte et urbaniste, directeur d'études associé (g
 
 Philippe BEGUEY, _diplômé architecte et urbaniste, directeur d'études associé_
 
-Sylvie DARREGERT, _psychosociologue, directrice d'études associée_
+Sylvie DARREGERT, _psychosociologue, directrice d'études_
 
 Candie DELMONT, _urbaniste_
 
