@@ -1,5 +1,4 @@
-#url: "https://creham.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://creham.julesrx.fr"
+url: "https://creham.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: fr
 
