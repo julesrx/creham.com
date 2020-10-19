@@ -14,8 +14,6 @@ Serge BARRY, _diplômé architecte et urbaniste, directeur d'études associé (g
 
 Philippe BEGUEY, _diplômé architecte et urbaniste, directeur d'études associé_
 
-Sylvie DARREGERT, _psychosociologue, directrice d'études_
-
 Candie DELMONT, _urbaniste_
 
 Geneviève DIWO, _assistante_
@@ -24,6 +22,6 @@ Cécile DUBOSC, _paysagiste_
 
 Nathalie JEANNEAU, _psychosociologue_
 
-Bao Trung NGUYEN, _technicien projets_
+Hai NGUYEN, _technicien projets_
 
 Marc RAFFOUX, _urbaniste_
