@@ -1,0 +1,9 @@
+services:
+  web:
+    container_name: creham_web
+    build: ./
+    volumes:
+      - $PWD/:/srv/jekyll
+      - $PWD/vendor/bundle:/usr/local/bundle
+    ports:
+      - 4000:4000
