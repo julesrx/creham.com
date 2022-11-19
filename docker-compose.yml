@@ -1,7 +1,7 @@
 services:
   web:
-    container_name: creham_web
-    build: ./
+    image: jekyll/jekyll:3.8
+    command: jekyll serve
     volumes:
       - $PWD/:/srv/jekyll
       - $PWD/vendor/bundle:/usr/local/bundle
