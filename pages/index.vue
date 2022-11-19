@@ -2,11 +2,7 @@
 const config = useAppConfig();
 
 const { data: navLinks } = await useAsyncData('home-nav', () =>
-  queryContent('/')
-    .where({ navigation: true })
-    .sort({ order: 1 })
-    .only(['_path', 'title', 'description'])
-    .find()
+  fetchContentNavigation(queryContent('/').where({ navigation: true }).sort({ order: 1 }))
 );
 </script>
 
@@ -38,7 +34,7 @@ const { data: navLinks } = await useAsyncData('home-nav', () =>
       </ul>
 
       <a
-        v-if="config.featured"
+        v-if="config.featured.show"
         :href="config.featured.link"
         target="_blank"
         class="featured"
