@@ -1,3 +1,15 @@
+<script setup lang="ts">
+const config = useAppConfig();
+
+const { data: navLinks } = await useAsyncData('home-nav', () =>
+  queryContent('/')
+    .where({ navigation: true })
+    .sort({ order: 1 })
+    .only(['_path', 'title', 'description'])
+    .find()
+);
+</script>
+
 <template>
   <header class="home">
     <div class="title">
@@ -19,23 +31,29 @@
     <div class="home-container">
       <img src="~/assets/img/virgule.png" alt="Virgule" class="virgule" />
 
-      <!-- <ul>
-        {% assign ps = site.pages | sort: 'order' %} {% for p in ps %} {% if p.navigation %}
-        <li>
-          <a href="{{- p.permalink -}}" title="{{- p.title -}}">{{ p.title }}</a>
+      <ul>
+        <li v-for="link in navLinks">
+          <NuxtLink :to="link._path" :title="link.title">{{ link.title }}</NuxtLink>
         </li>
-        {% endif %} {% endfor %}
-      </ul> -->
+      </ul>
 
-      <!-- <a href="{{- site.featured_link -}}" target="_blank" class="featured" rel="noopener">
-        {{- site.featured_html -}}
-      </a> -->
+      <a
+        v-if="config.featured"
+        :href="config.featured.link"
+        target="_blank"
+        class="featured"
+        rel="noopener"
+        v-html="config.featured.html"
+      >
+      </a>
     </div>
   </nav>
 
   <footer>
-    {% include link-nav.html %}
+    <Nav />
 
-    <a href="mentions-legales" title="Mentions légales" class="mentions">Mentions légales</a>
+    <NuxtLink to="/mentions-legales" title="Mentions légales" class="mentions">
+      Mentions légales
+    </NuxtLink>
   </footer>
 </template>
