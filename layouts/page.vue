@@ -2,6 +2,17 @@
 const config = useAppConfig();
 const content = useContent();
 
+const sliders = [
+  '1-urbaniste.jpg',
+  '2-architecte.jpg',
+  '3-paysagiste.jpg',
+  '4-psychosociologue.jpg',
+  '5-socioeconomiste.jpg',
+  '6-geographe.jpg'
+];
+
+const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg', '');
+
 const { data: navLinks } = await useAsyncData('page-nav', () =>
   fetchContentNavigation(queryContent('/').where({ navigation: true }).sort({ order: 1 }))
 );
@@ -22,14 +33,16 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
       <span>g<span class="e">é</span>ographe</span>
     </p>
 
-    <!-- <div id="slider">
-      <div class="mask">
-        {% assign sliders = site.static_files | where: "slider", true %}
-        {% for slider in sliders %}
-          <img src="{{- slider.path -}}" alt="{{- file.basename -}}" class="slider-img">
-        {% endfor %}
+    <div id="slider">
+      <div id="mask">
+        <nuxt-img
+          v-for="s in sliders"
+          :src="'/img/slider/' + s"
+          :alt="getImageBaseName(s)"
+          class="slider-img"
+        />
       </div>
-    </div> -->
+    </div>
   </header>
 
   <nav class="page">
@@ -57,11 +70,7 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
       </div>
 
       <!-- TODO: fix, not getting content.page.image -->
-      <nuxt-img
-        v-if="content.page.image"
-        :src="'/img/' + content.page.image"
-        class="page-image"
-      />
+      <nuxt-img v-if="content.page.image" :src="'/img/' + content.page.image" class="page-image" />
     </div>
   </article>
 
