@@ -10,7 +10,7 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
 <template>
   <header class="page">
     <NuxtLink to="/">
-      <img src="~/assets/img/creham.gif" :alt="config.title" class="logo" />
+      <nuxt-img src="/img/creham.gif" :alt="config.title" class="logo" />
     </NuxtLink>
 
     <p class="sub-title slider-text">
@@ -47,19 +47,19 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
 
     <div class="print">
       <span class="print-button" onclick="window.print()">
-        <img src="~/assets/img/icons/print.png" alt="Imprimer" class="icon" />
+        <nuxt-img src="/img/icons/print.png" alt="Imprimer" class="icon" />
         <span>Imprimer la page</span>
       </span>
       <hr />
 
       <div class="clearfix">
-        <img src="~/assets/img/virgule.png" alt="Virgule" class="virgule" />
+        <nuxt-img src="/img/virgule.png" alt="Virgule" class="virgule" />
       </div>
 
       <!-- TODO: fix, not getting content.page.image -->
-      <img
+      <nuxt-img
         v-if="content.page.image"
-        :src="'~/assets/img/' + content.page.image"
+        :src="'/img/' + content.page.image"
         class="page-image"
       />
     </div>
