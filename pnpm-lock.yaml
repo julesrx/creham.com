@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/cabin': ^4.5.9
   '@nuxt/content': ^2.2.2
   '@nuxt/image-edge': 1.0.0-27809804.194d2d6
   nuxt: 3.0.0
   sass: ^1.56.1
+
+dependencies:
+  '@fontsource/cabin': 4.5.9
 
 devDependencies:
   '@nuxt/content': 2.2.2
@@ -334,6 +338,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/cabin/4.5.9:
+    resolution: {integrity: sha512-xfgktq3GUUk/LSNE91MOJyHEaeXBmAyCkjX/syEqEQj88HG7LA4npPZ0FzQ/mg56gLgdginDhkTH3/JcB+jDdA==}
+    dev: false
 
   /@ioredis/commands/1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}
