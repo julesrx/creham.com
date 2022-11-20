@@ -5,7 +5,7 @@ navigation: true
 order: 3
 ---
 
-Spécialisé en urbanisme, paysage, sociologie et développement local, le {{ site.title }} intervient dans différents domaines :
+Spécialisé en urbanisme, paysage, sociologie et développement local, le <site-title></site-title> intervient dans différents domaines :
 
 **La stratégie et la planification territoriale :** Schéma de Cohérence Territoriale (SCOT), Plan Local d'Urbanisme (PLU et PLUI), Carte communale.
 
@@ -25,4 +25,4 @@ Spécialisé en urbanisme, paysage, sociologie et développement local, le {{ si
 
 **L'environnement :** évaluation des politiques de gestion des ressources et espaces naturels (enquêtes pratiques / représentations)
 
-Pour la réalisation de toutes ses missions, le {{ site.title }} a développé une méthodologie et acquis une expérience dans la mise en oeuvre des principes de développement durable (approche environnementale de l'urbanisme (AEU), démarches pluridisciplinaires et participatives, ...)
+Pour la réalisation de toutes ses missions, le <site-title></site-title> a développé une méthodologie et acquis une expérience dans la mise en oeuvre des principes de développement durable (approche environnementale de l'urbanisme (AEU), démarches pluridisciplinaires et participatives, ...)

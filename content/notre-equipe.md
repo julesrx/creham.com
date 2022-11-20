@@ -1,14 +1,11 @@
 ---
 layout: page
 title: Notre équipe
-permalink: notre-equipe
-redirect_from:
-  - notre-equipe-p-1
 navigation: true
 order: 1
 ---
 
-__L'équipe pluridisciplinaire du {{ site.title }} est composée de :__
+**L'équipe pluridisciplinaire du <site-title></site-title> est composée de :**
 
 Serge BARRY, _diplômé architecte et urbaniste, directeur d'études associé (gérant)_
 

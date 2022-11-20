@@ -1,9 +1,6 @@
 ---
 layout: page
 title: Accès
-permalink: acces
-redirect_from:
-  - acces-p-4
 ---
 
 **<site-title></site-title>**
