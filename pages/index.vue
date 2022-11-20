@@ -30,15 +30,14 @@ const navLinks = await useNavLinks();
         </li>
       </ul>
 
-      <a
+      <NuxtLink
         v-if="config.featured.show"
-        :href="config.featured.link"
+        :to="config.featured.link"
         target="_blank"
         class="featured"
-        rel="noopener"
         v-html="config.featured.html"
       >
-      </a>
+      </NuxtLink>
     </div>
   </nav>
 

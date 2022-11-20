@@ -42,6 +42,8 @@ const navLinks = await useNavLinks();
   </article>
 
   <footer>
-    <a href="mentions-legales" title="Mentions légales" class="mentions mr-0">Mentions légales</a>
+    <NuxtLink to="/mentions-legales" title="Mentions légales" class="mentions mr-0">
+      Mentions légales
+    </NuxtLink>
   </footer>
 </template>
