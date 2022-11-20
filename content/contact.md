@@ -4,10 +4,10 @@ title: Contact
 permalink: contact
 ---
 
-__{{ site.title }}__  
+**<site-title></site-title>**
 
-Adresse : {{ site.street }}, {{ site.zip }} {{ site.city }}    
-Tel : {{ site.tel }}  
-Mail : {{ site.email }}
+Adresse : <site-address></site-address>  
+Tel : <site-tel></site-tel>  
+Mail : <site-email></site-email>
 
-<u><a href="mailto:{{ site.email }}">Nous envoyer un message</a></u>
+<mail-to></mail-to>

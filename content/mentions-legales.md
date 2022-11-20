@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 <b>Editeur du site</b>  
-__{{ site.title }}__  
+**{{ site.title }}**  
 {{ site.street }}, {{ site.zip }} {{ site.city }}  
 {{ site.tel }}
 
@@ -39,10 +39,11 @@ Site : <a href="https://julesrx.fr" target="_blank">julesrx.fr</a>
 {{ site.title }} et Frédéric Le Lan (C.A. de La Rochelle)
 
 <b>Données personnelles</b>  
-Les informations collectées sur le site sont destinées au {{ site.title }}. Elles font l'objet d'un traitement informatique ayant pour finalité le traitement de votre demande et notre gestion commerciale, en particulier :  
+Les informations collectées sur le site sont destinées au {{ site.title }}. Elles font l'objet d'un traitement informatique ayant pour finalité le traitement de votre demande et notre gestion commerciale, en particulier :
+
 - la réponse aux demandes d'information formulées sur le site,
 - l'envoi d'informations commerciales lorsque vous avez donné votre accord ou lorsque la législation en vigueur l'autorise,
 - l'établissement de statistiques générales sur la consultation du site afin d'améliorer les prestations que nous offrons.
- 
+
 Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous disposez d'un droit d'accès, de rectification, de suppression des informations qui vous concernent, que vous pouvez exercer en vous adressant à :  
-{{ site.title }}, {{ site.street }}, {{ site.zip }} {{ site.city }} 
+{{ site.title }}, {{ site.street }}, {{ site.zip }} {{ site.city }}

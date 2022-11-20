@@ -6,9 +6,9 @@ redirect_from:
   - acces-p-4
 ---
 
-__{{ site.title }}__  
+**<site-title></site-title>**
 
-{{ site.street }}, {{ site.zip }} {{ site.city }}  
+<site-address></site-address>  
 Tramway Ligne A et Vcub : Station Gaviniès
 
 <iframe class="gmap-acces"
