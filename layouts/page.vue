@@ -1,17 +1,6 @@
 <script setup lang="ts">
 const config = useAppConfig();
-const content = useContent();
-
-const sliders = [
-  '1-urbaniste.jpg',
-  '2-architecte.jpg',
-  '3-paysagiste.jpg',
-  '4-psychosociologue.jpg',
-  '5-socioeconomiste.jpg',
-  '6-geographe.jpg'
-];
-
-const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg', '');
+const { page } = useContent();
 
 const { data: navLinks } = await useAsyncData('page-nav', () =>
   fetchContentNavigation(queryContent('/').where({ navigation: true }).sort({ order: 1 }))
@@ -24,25 +13,7 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
       <nuxt-img src="/img/creham.gif" :alt="config.title" class="logo" />
     </NuxtLink>
 
-    <p class="sub-title slider-text">
-      <span>urbanist<span class="e">e</span></span>
-      <span>archit<span class="e">e</span>cte</span>
-      <span>paysagist<span class="e">e</span></span>
-      <span>psychosociologu<span class="e">e</span></span>
-      <span>socio<span class="e">é</span>conomiste</span>
-      <span>g<span class="e">é</span>ographe</span>
-    </p>
-
-    <div id="slider">
-      <div id="mask">
-        <nuxt-img
-          v-for="s in sliders"
-          :src="'/img/slider/' + s"
-          :alt="getImageBaseName(s)"
-          class="slider-img"
-        />
-      </div>
-    </div>
+    <Slider />
   </header>
 
   <nav class="page">
@@ -54,7 +25,7 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
   </nav>
 
   <article class="content">
-    <div class="info page-{{- page.permalink -}}">
+    <div :class="['info', 'page-' + page._path.replace('/', '')]">
       <slot />
     </div>
 
@@ -69,8 +40,7 @@ const { data: navLinks } = await useAsyncData('page-nav', () =>
         <nuxt-img src="/img/virgule.png" alt="Virgule" class="virgule" />
       </div>
 
-      <!-- TODO: fix, not getting content.page.image -->
-      <nuxt-img v-if="content.page.image" :src="'/img/' + content.page.image" class="page-image" />
+      <nuxt-img v-if="page.image" :src="'/img/pages/' + page.image" class="page-image" />
     </div>
   </article>
 
