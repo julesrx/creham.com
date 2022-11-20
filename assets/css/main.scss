@@ -106,8 +106,14 @@ main#container {
       }
 
       .slider-text {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 2.9em;
         color: $grey;
+
+        & > span {
+          margin-right: .3em;
+        }
 
         span.e {
           color: $primary;

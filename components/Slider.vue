@@ -42,6 +42,8 @@ onMounted(() => {
       for (const t of texts) {
         t.classList.remove('couleur');
       }
+
+      texts[after.index].classList.add('couleur');
     }, 600);
   }, 3000);
 });
@@ -65,7 +67,7 @@ const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg',
   </p>
 
   <div id="slider">
-    <div id="mask">
+    <div class="mask">
       <nuxt-img
         v-for="s in orderedSliders"
         :key="s.img"
