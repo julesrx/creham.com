@@ -1,9 +1,9 @@
 # Créham
 
-Créham's website, build with [Jekyll](https://jekyllrb.com/).
+Créham's website, build with [Nuxt](https://nuxt.com/) and [Nuxt Content](https://content.nuxtjs.org/).
 
-## Docker
+## Run
 
-1. create `_site` directory at the project root
-2. run `docker compose up`
-3. navigate to `http://localhost:4000`
+1. install deps `pnpm i`
+2. run `pnpm dev`
+3. navigate to `http://localhost:3000`
