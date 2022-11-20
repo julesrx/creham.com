@@ -19,6 +19,8 @@ const navLinks = await useNavLinks();
         {{ link.title }}
       </NuxtLink>
     </div>
+
+    <Nav />
   </nav>
 
   <article class="content">
