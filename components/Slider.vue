@@ -68,7 +68,7 @@ const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg',
 
   <div id="slider">
     <div class="mask">
-      <nuxt-img
+      <img
         v-for="s in orderedSliders"
         :key="s.img"
         :src="'/img/slider/' + s.img"
