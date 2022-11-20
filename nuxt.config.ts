@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/image-edge'],
+  css: ['@fontsource/cabin', '/assets/css/main.scss'],
   content: { documentDriven: true },
-  css: ['@fontsource/cabin', '@/assets/css/main.scss']
+  typescript: { typeCheck: true, strict: true }
 });

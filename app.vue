@@ -1,5 +1,7 @@
 <template>
   <Html lang="fr" />
 
-  <NuxtPage />
+  <main id="container">
+    <NuxtPage />
+  </main>
 </template>

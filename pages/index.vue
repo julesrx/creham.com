@@ -1,9 +1,6 @@
 <script setup lang="ts">
 const config = useAppConfig();
-
-const { data: navLinks } = await useAsyncData('home-nav', () =>
-  fetchContentNavigation(queryContent('/').where({ navigation: true }).sort({ order: 1 }))
-);
+const navLinks = await useNavLinks();
 </script>
 
 <template>
