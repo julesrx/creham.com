@@ -2,5 +2,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   css: ['@fontsource/cabin', '/assets/css/main.scss'],
   content: { documentDriven: true },
-  typescript: { typeCheck: true, strict: true }
+  typescript: { typeCheck: true, strict: true },
+  nitro: { prerender: { routes: ['/sitemap.xml'] } }
 });
