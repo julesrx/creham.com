@@ -7,7 +7,7 @@ const navLinks = await useNavLinks();
 <template>
   <header class="page">
     <NuxtLink to="/">
-      <img src="/img/creham.gif" :alt="config.title" class="logo" />
+      <nuxt-img src="/img/creham.gif" :alt="config.title" class="logo" height="110"/>
     </NuxtLink>
 
     <Slider />
@@ -30,16 +30,16 @@ const navLinks = await useNavLinks();
 
     <div class="print">
       <span class="print-button" onclick="window.print()">
-        <img src="/img/icons/print.png" alt="Imprimer" class="icon" />
+        <nuxt-img src="/img/icons/print.png" alt="Imprimer" class="icon" />
         <span>Imprimer la page</span>
       </span>
       <hr />
 
       <div class="clearfix">
-        <img src="/img/virgule.png" alt="Virgule" class="virgule" />
+        <nuxt-img src="/img/virgule.png" alt="Virgule" class="virgule" />
       </div>
 
-      <img v-if="page.image" :src="'/img/pages/' + page.image" class="page-image" />
+      <nuxt-img v-if="page.image" :src="'/img/pages/' + page.image" class="page-image" />
     </div>
   </article>
 

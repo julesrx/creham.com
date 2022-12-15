@@ -68,12 +68,13 @@ const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg',
 
   <div id="slider">
     <div class="mask">
-      <img
+      <nuxt-img
         v-for="s in orderedSliders"
         :key="s.img"
         :src="'/img/slider/' + s.img"
         :alt="getImageBaseName(s.img)"
         :class="{ 'slider-img': true, moving: s.moving }"
+        loading="lazy"
       />
     </div>
   </div>

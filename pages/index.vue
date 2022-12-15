@@ -11,14 +11,14 @@ const navLinks = await useNavLinks();
   <header class="home">
     <div class="title">
       <NuxtLink to="/" title="Accueil">
-        <img class="logo" src="/img/creham.gif" alt="Creham" />
+        <nuxt-img class="logo" src="/img/creham.gif" alt="Creham" height="136" />
       </NuxtLink>
 
       <h2 class="slogan">une équipe pluridisciplinaire</h2>
     </div>
 
     <p class="sub-title">Urbanisme, paysage, sociologie et développement local</p>
-    <img src="/img/home.jpg" alt="Accueil" class="deco" />
+    <nuxt-img src="/img/home.jpg" alt="Accueil" class="deco" />
     <p class="sub-title text-grey">
       Etude, conseil, assistance à maîtrise d'ouvrage et maîtrise d'oeuvre
     </p>
@@ -26,7 +26,7 @@ const navLinks = await useNavLinks();
 
   <nav class="home">
     <div class="home-container">
-      <img src="/img/virgule.png" alt="Virgule" class="virgule" />
+      <nuxt-img src="/img/virgule.png" alt="Virgule" class="virgule" />
 
       <ul>
         <li v-for="link in navLinks">
