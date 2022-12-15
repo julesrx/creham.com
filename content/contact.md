@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Contact
+head:
+  title: Contact - Créham
 ---
 
 **:SiteTitle**

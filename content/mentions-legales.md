@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Mentions légales
+head:
+  title: Mentions légales - Créham
 ---
 
 <b>Editeur du site</b>  

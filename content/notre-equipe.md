@@ -3,6 +3,8 @@ layout: page
 title: Notre équipe
 navigation: true
 order: 1
+head:
+  title: Notre équipe - Créham
 ---
 
 **L'équipe pluridisciplinaire du :SiteTitle est composée de :**
