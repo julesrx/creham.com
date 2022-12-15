@@ -1,1 +1,0 @@
-import{a as t,b as n,o as a,e as o,t as s,u as p}from"./entry.cdc64d6a.js";const u=t({__name:"SiteTitle",setup(r){const e=n();return(c,i)=>(a(),o("span",null,s(p(e).title),1))}});export{u as default};
