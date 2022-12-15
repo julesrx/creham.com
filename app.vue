@@ -1,6 +1,11 @@
 <script setup lang="ts">
 const config = useAppConfig();
 const { page } = useContent();
+
+const url = computed(() => {
+  if (!page.value || !page.value._path) return config.url;
+  return config.url + page.value._path;
+});
 </script>
 
 <template>
@@ -24,7 +29,7 @@ const { page } = useContent();
     <Meta property="og:title" :content="config.title" />
     <Meta property="og:type" content="website" />
     <Meta property="og:image" :content="config.url + '/img/thumbnail.png'" />
-    <Meta property="og:url" :content="config.url + page._path" />
+    <Meta property="og:url" :content="url" />
     <Meta property="og:description" :content="config.description" />
     <Meta property="og:locale" content="fr_FR" />
     <Meta property="og:email" :content="config.email" />
