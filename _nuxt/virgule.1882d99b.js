@@ -1,1 +1,0 @@
-import{s as t}from"./entry.d6fc983c.js";import{u as a}from"./asyncData.e8477185.js";const n=async()=>{const{data:s}=await a("nav-links",()=>t("/").where({navigation:!0}).sort({order:1}).only(["_path","title"]).find());return s},r=""+globalThis.__publicAssetsURL("img/creham.gif"),e=""+globalThis.__publicAssetsURL("img/virgule.png");export{e as _,r as a,n as u};

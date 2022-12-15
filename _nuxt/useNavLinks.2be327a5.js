@@ -1,0 +1,1 @@
+import{s as a}from"./entry.4dd23f87.js";import{u as n}from"./asyncData.95f4e114.js";const o=async()=>{const{data:t}=await n("nav-links",()=>a("/").where({navigation:!0}).sort({order:1}).only(["_path","title"]).find());return t};export{o as u};
