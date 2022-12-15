@@ -4,6 +4,10 @@ const navLinks = await useNavLinks();
 </script>
 
 <template>
+  <Head>
+    <Title>{{ config.short_description }}</Title>
+  </Head>
+
   <header class="home">
     <div class="title">
       <NuxtLink to="/" title="Accueil">

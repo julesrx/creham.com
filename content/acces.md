@@ -3,9 +3,9 @@ layout: page
 title: Accès
 ---
 
-**<site-title></site-title>**
+**:SiteTitle**
 
-<site-address></site-address>  
+:SiteAddress
 Tramway Ligne A et Vcub : Station Gaviniès
 
 <iframe class="gmap-acces"

@@ -5,7 +5,7 @@ navigation: true
 order: 1
 ---
 
-**L'équipe pluridisciplinaire du <site-title></site-title> est composée de :**
+**L'équipe pluridisciplinaire du :SiteTitle est composée de :**
 
 Serge BARRY, _diplômé architecte et urbaniste, directeur d'études associé (gérant)_
 

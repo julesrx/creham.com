@@ -6,22 +6,22 @@ order: 2
 image: metiers.png
 ---
 
-Depuis 1985, le <site-title></site-title> mène aux côtés de collectivités publiques, d'organismes para-publics et d'opérateurs privés, des missions d'études, de conseil, d'assistance à maîtrise d'ouvrage et de maîtrise d'oeuvre.
+Depuis 1985, le :SiteTitle mène aux côtés de collectivités publiques, d'organismes para-publics et d'opérateurs privés, des missions d'études, de conseil, d'assistance à maîtrise d'ouvrage et de maîtrise d'oeuvre.
 
 Grâce à ces expériences multiples et diversifiées, l'équipe a développé des savoir-faire qui lui permettent aujourd'hui d'intervenir à différents stades d'élaboration des projets :
 
-__Stratégie et prospective territoriale__
+**Stratégie et prospective territoriale**
 
-__Diagnostic social, urbain et paysager__
+**Diagnostic social, urbain et paysager**
 
-__Programmation et faisabilité__
+**Programmation et faisabilité**
 
-__Montage opérationnel et financier__
+**Montage opérationnel et financier**
 
-__Evaluation environnementale__
+**Evaluation environnementale**
 
-__Maîtrise d'oeuvre d'espace public__
+**Maîtrise d'oeuvre d'espace public**
 
-__Maîtrise d'Oeuvre Urbaine et Sociale (MOUS)__
+**Maîtrise d'Oeuvre Urbaine et Sociale (MOUS)**
 
-__Suivi/évaluation des projets et politiques publiques__
+**Suivi/évaluation des projets et politiques publiques**

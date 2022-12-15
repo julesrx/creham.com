@@ -3,10 +3,10 @@ layout: page
 title: Contact
 ---
 
-**<site-title></site-title>**
+**:SiteTitle**
 
-Adresse : <site-address></site-address>  
-Tel : <site-tel></site-tel>  
-Mail : <site-email></site-email>
+Adresse : :SiteAddress  
+Tel : :SiteTel  
+Mail : :SiteEmail
 
-<mail-to></mail-to>
+:MailTo
