@@ -29,9 +29,9 @@ const { page } = useContent();
     <Meta property="og:locale" content="fr_FR" />
     <Meta property="og:email" :content="config.email" />
 
-    <link rel="canonical" :href="config.url" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <Link rel="canonical" :href="config.url" />
+    <Link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <Link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
 
     <Title v-if="page.title">{{ page.title }} - {{ config.title }}</Title>
     <Title v-else>{{ config.short_description }}</Title>
