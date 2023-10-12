@@ -1,11 +1,9 @@
 <script setup lang="ts">
 const config = useAppConfig();
-const route = useRoute();
 
 const navLinks = await useNavLinks();
 
-const { data: page } = await useAsyncData('current-page', () => queryContent(route.path).findOne());
-
+const page = await useCurrentPage();
 const path = computed(() => page.value?._path ?? '');
 const image = computed<string | undefined>(() => page.value?.image);
 </script>
