@@ -1,5 +1,8 @@
 # Créham
 
+
+[![GitHub Pages](https://github.com/julesrx/creham.com/actions/workflows/gh-pages.yml/badge.svg?branch=master)](https://github.com/julesrx/creham.com/deployments/activity_log?environment=github-pages)
+
 Créham's website, build with [Nuxt](https://nuxt.com/) and [Nuxt Content](https://content.nuxtjs.org/).
 
 ## Run
