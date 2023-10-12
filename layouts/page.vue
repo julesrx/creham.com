@@ -1,13 +1,19 @@
 <script setup lang="ts">
 const config = useAppConfig();
-const { page } = useContent();
+const route = useRoute();
+
 const navLinks = await useNavLinks();
+
+const { data: page } = await useAsyncData('current-page', () => queryContent(route.path).findOne());
+
+const path = computed(() => page.value?._path ?? '');
+const image = computed<string | undefined>(() => page.value?.image);
 </script>
 
 <template>
   <header class="page">
     <NuxtLink to="/">
-      <NuxtImg src="/img/creham.gif" :alt="config.title" class="logo" height="110"/>
+      <NuxtImg src="/img/creham.gif" :alt="config.title" class="logo" height="110" />
     </NuxtLink>
 
     <Slider />
@@ -24,7 +30,7 @@ const navLinks = await useNavLinks();
   </nav>
 
   <article class="content">
-    <div :class="['info', 'page-' + page._path.replace('/', '')]">
+    <div :class="['info', 'page-' + path.replace('/', '')]">
       <slot />
     </div>
 
@@ -39,7 +45,7 @@ const navLinks = await useNavLinks();
         <NuxtImg src="/img/virgule.png" alt="Virgule" class="virgule" />
       </div>
 
-      <NuxtImg v-if="page.image" :src="'/img/pages/' + page.image" class="page-image" />
+      <NuxtImg v-if="image" :src="'/img/pages/' + image" class="page-image" />
     </div>
   </article>
 

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const config = useAppConfig();
-const { page } = useContent();
+const route = useRoute();
 
+const { data: page } = await useAsyncData('current-page', () => queryContent(route.path).findOne());
 const url = computed(() => {
   if (!page.value || !page.value._path) return config.url;
   return config.url + page.value._path;
@@ -40,6 +41,8 @@ const url = computed(() => {
   </Head>
 
   <main id="container">
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </main>
 </template>
