@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ layout: false });
+const handleError = () => clearError({ redirect: '/' });
 </script>
 
 <template>
@@ -8,6 +8,8 @@ definePageMeta({ layout: false });
 
     <p><strong>Cette page n'existe pas :(</strong></p>
     <p>La page ou ressource que vous avez demandé est introuvable.</p>
-    <p class="couleur"><NuxtLink to="/">retour à l'accueil</NuxtLink></p>
+    <p class="couleur">
+      <NuxtLink to="/" @click.prevent="handleError">retour à l'accueil</NuxtLink>
+    </p>
   </div>
 </template>
