@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useIntervalFn, useTimeoutFn } from '@vueuse/core';
+
 type Slider = {
   index: number;
   position: number;
@@ -18,18 +20,15 @@ const orderedSliders = computed(() => sliders.value.sort((a, b) => a.position - 
 
 const text = ref<HTMLParagraphElement>();
 
-let interval: NodeJS.Timer;
-let timeout: NodeJS.Timeout;
-
 onMounted(() => {
-  interval = setInterval(() => {
+  useIntervalFn(() => {
     const current = orderedSliders.value[0];
     const after = orderedSliders.value[1];
 
     current.moving = true;
     after.moving = true;
 
-    timeout = setTimeout(() => {
+    useTimeoutFn(() => {
       for (const s of sliders.value) {
         if (s.position === 0) s.position = sliders.value.length - 1;
         else s.position = s.position - 1;
@@ -48,11 +47,6 @@ onMounted(() => {
   }, 3000);
 });
 
-onUnmounted(() => {
-  clearInterval(interval);
-  clearTimeout(timeout);
-});
-
 const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg', '');
 </script>
 
@@ -68,13 +62,15 @@ const getImageBaseName = (src: string) => src.replace(/\d-/, '').replace('.jpg',
 
   <div id="slider">
     <div class="mask">
-      <nuxt-img
+      <NuxtImg
         v-for="s in orderedSliders"
         :key="s.img"
         :src="'/img/slider/' + s.img"
         :alt="getImageBaseName(s.img)"
         :class="{ 'slider-img': true, moving: s.moving }"
         loading="lazy"
+        width="924"
+        height="131"
       />
     </div>
   </div>

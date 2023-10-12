@@ -10,7 +10,8 @@
   "dependencies": {
     "@fontsource-variable/cabin": "^5.0.14",
     "@nuxt/content": "^2.8.5",
-    "@nuxt/image": "1.0.0-rc.3"
+    "@nuxt/image": "1.0.0-rc.3",
+    "@vueuse/core": "^10.5.0"
   },
   "devDependencies": {
     "nuxt": "3.7.4",
