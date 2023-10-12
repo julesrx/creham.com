@@ -1,1 +1,0 @@
-import"./Slider.vue_vue_type_script_setup_true_lang.6ef0ccfa.js";import{_ as i}from"./Slider.vue_vue_type_script_setup_true_lang.6ef0ccfa.js";import"./nuxt-img.0459a8d2.js";import"./entry.4dd23f87.js";export{i as default};

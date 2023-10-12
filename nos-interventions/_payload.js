@@ -1,1 +1,0 @@
-export default {data:{"nav-links":[{_path:"\u002Fnotre-equipe",title:"Notre équipe"},{_path:"\u002Fnos-metiers",title:"Nos métiers"},{_path:"\u002Fnos-interventions",title:"Nos interventions"}]},prerenderedAt:void 0}
