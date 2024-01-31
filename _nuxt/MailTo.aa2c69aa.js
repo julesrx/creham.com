@@ -1,1 +1,0 @@
-import{d as o,u as a,o as s,a as n,f as t,g as r}from"./entry.1795e084.js";const c=["href"],l=o({__name:"MailTo",setup(u){const e=a();return(f,_)=>(s(),n("u",null,[t("a",{href:"mailto:"+r(e).email},"Nous envoyer un message",8,c)]))}});export{l as default};
