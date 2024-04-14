@@ -21,13 +21,6 @@ SIRET : 379 597 693 00025
 APE : 7022Z
 
 <b>Développement</b>  
-TRIPTIC  
-22 chemin Bécard  
-33140 Villenave-d'Ornon  
-Site : <a href="http://www.triptic.biz" target="_blank">www.triptic.biz</a>  
-SIRET : 443 147 525 00028  
-APE : 5829C
-
 Jules Raffoux  
 Site : <a href="https://julesrx.fr" target="_blank">julesrx.fr</a>
 

@@ -15,11 +15,9 @@ Philippe BEGUEY, _diplômé architecte et urbaniste, directeur d'études associ�
 
 Candie DELMONT, _urbaniste_
 
-Geneviève DIWO, _assistante_
-
-Cécile DUBOSC, _paysagiste_
-
 Nathalie JEANNEAU, _psychosociologue_
+
+Margot LEVALET, _paysagiste_
 
 Hai NGUYEN, _technicien projets_
 
