@@ -1,0 +1,1 @@
+import e from"./BW35v_yU.js";import{d as p,c as r,o as a,P as n}from"./C6LPTrBs.js";import"./DZ11A7Oa.js";import"./CTHQK_Vi.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./B09mzlYl.js";const h=p({__name:"acces",setup(m){return(o,c)=>{const t=e;return a(),r(t,{path:(o._.provides[n]||o.$route).path},null,8,["path"])}}});export{h as default};

@@ -1,1 +1,0 @@
-import e from"./Cp8YlKuu.js";import{d as n,c as r,P as p,o as a}from"./BOVntX_I.js";import"./CMuWENEN.js";import"./D3EykycV.js";import"./C-v3KzvZ.js";import"./Dnd51l0P.js";import"./CFGep2Md.js";const h=n({__name:"nos-interventions",setup(m){return(o,s)=>{const t=e;return a(),r(t,{path:(o._.provides[p]||o.$route).path},null,8,["path"])}}});export{h as default};

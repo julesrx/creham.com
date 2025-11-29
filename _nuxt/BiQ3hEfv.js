@@ -1,0 +1,1 @@
+import e from"./BW35v_yU.js";import{d as r,c as p,P as n,o as m}from"./C6LPTrBs.js";import"./DZ11A7Oa.js";import"./CTHQK_Vi.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./B09mzlYl.js";const h=r({__name:"nos-metiers",setup(a){return(o,s)=>{const t=e;return m(),p(t,{path:(o._.provides[n]||o.$route).path},null,8,["path"])}}});export{h as default};

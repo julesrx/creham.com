@@ -1,0 +1,1 @@
+import e from"./BW35v_yU.js";import{d as n,c as p,P as r,o as a}from"./C6LPTrBs.js";import"./DZ11A7Oa.js";import"./CTHQK_Vi.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./B09mzlYl.js";const h=n({__name:"mentions-legales",setup(m){return(o,s)=>{const t=e;return a(),p(t,{path:(o._.provides[r]||o.$route).path},null,8,["path"])}}});export{h as default};

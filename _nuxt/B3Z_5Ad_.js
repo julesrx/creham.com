@@ -1,0 +1,1 @@
+import{d as n,u as a,a as o,t,h as s,o as r}from"./C6LPTrBs.js";const _=n({__name:"SiteAddress",setup(p){const e=a();return(c,i)=>(r(),o("span",null,t(s(e).street)+", "+t(s(e).zip)+" "+t(s(e).city),1))}});export{_ as default};

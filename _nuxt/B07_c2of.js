@@ -1,0 +1,1 @@
+import{d as o,u as a,a as s,o as n,e as t,h as r}from"./C6LPTrBs.js";const c=["href"],l=o({__name:"MailTo",setup(u){const e=a();return(_,f)=>(n(),s("u",null,[t("a",{href:"mailto:"+r(e).email},"Nous envoyer un message",8,c)]))}});export{l as default};

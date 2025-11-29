@@ -1,0 +1,1 @@
+import e from"./BW35v_yU.js";import{d as p,c as r,P as a,o as n}from"./C6LPTrBs.js";import"./DZ11A7Oa.js";import"./CTHQK_Vi.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./B09mzlYl.js";const h=p({__name:"espace-de-travail",setup(m){return(o,s)=>{const t=e;return n(),r(t,{path:(o._.provides[a]||o.$route).path},null,8,["path"])}}});export{h as default};
